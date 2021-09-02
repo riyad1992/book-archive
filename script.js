@@ -2,7 +2,7 @@
 document.getElementById('input-button').addEventListener('click', () => {
     const inputValue = document.getElementById('input-value');
     const searchText = inputValue.value;
-    const url = `http://openlibrary.org/search.json?q=${searchText}`
+    const url = `https://openlibrary.org/search.json?q=${searchText}`
     fetch(url)
     .then(res => res.json())
     .then(data => displayResult(data))
