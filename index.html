@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+    <!-- bootstrip lind -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- css -->
+    <style>
+        body{
+            background-color: #e1dcc5;;
+        }
+        #result-msg{
+            display: none;
+        }
+        img{
+            width: 150px;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center mt-5 text-black-50">Get Your Best Book</h1>
+    <section class="container mt-2">
+        <div class="input-group mb-3 w-50 mx-auto">
+            <input id="input-value" type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary bg-danger" type="button" id="input-button">Search</button>
+        </div>
+    </section>
+    <!-- Result Massege -->
+    <h5 id="result-msg" class="text-center text-white w-50 bg-danger rounded-3 mt-2 mx-auto py-2"></h5>
+    <section class="container mt-5 bg-white">
+        <div id="books" class="row row-cols-1 row-cols-md-2 g-4 border-0">
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
